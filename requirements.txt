@@ -1,0 +1,7 @@
+langchain
+urllib3
+numpy
+groq
+datetime
+pytz
+streamlit
