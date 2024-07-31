@@ -7,12 +7,17 @@ import datetime
 import pytz,json,re,logging
 from langchain.memory import ConversationBufferMemory
 import sys
+import streamlit as st
 
 
 # Set up logging configuration
 logging.basicConfig(filename='qa_bot.log', level=logging.DEBUG, format='%(asctime)s %(levelname)s %(message)s')
-# Initialize GROQ client with API key
-groq_client = Groq(api_key=os.environ.get("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"))
+# Initialize GROQ client with API key from Streamlit secrets
+api_key = st.secrets['GROQ_API_KEY']
+if not api_key:
+    raise ValueError("GROQ_API_KEY not found in Streamlit secrets")
+
+groq_client = Groq(api_key=api_key)
 
 
 
