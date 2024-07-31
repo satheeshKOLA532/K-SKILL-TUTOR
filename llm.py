@@ -53,7 +53,6 @@ For example:
 Always encourage the student to practice and offer constructive feedback to help them improve.
 
 Start by introducing yourself as their friendly English tutor who is here to help them learn and grow.
-Use filler words like "um," "uh," and "ah," pause words like "so," "okay," and "right," and repetitions like "so, so, I'll just..." to make the conversation more natural.
 """
 
 # custom_prompt = """"
