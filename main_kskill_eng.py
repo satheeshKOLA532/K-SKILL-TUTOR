@@ -28,7 +28,7 @@ def main():
     # </style>
     # """
     # st.markdown(html_css,unsafe_allow_html=True)
-    st.title("let's connect with English Brains...")
+    st.title("Hello! I'm Elsa - your K-Skill english tutor..")
 
     # Initialize chat session in Streamlit if not already present
     if "chat_session" not in st.session_state:
