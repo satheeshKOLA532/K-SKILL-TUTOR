@@ -1,5 +1,6 @@
 import streamlit as st
-from llm import run_qa
+# from llm import run_qa
+from llm_med_coach import run_qa
 import os
 import numpy as np
 import time
@@ -28,8 +29,8 @@ def main():
     # </style>
     # """
     # st.markdown(html_css,unsafe_allow_html=True)
-    st.title("Hello! I'm Elsa - your K-Skill english tutor..")
-
+    # st.title("Hello! I'm Elsa - your K-Skill english tutor..")
+    st.title("Hello! I'm your Pharma Coach")
     # Initialize chat session in Streamlit if not already present
     if "chat_session" not in st.session_state:
         st.session_state.chat_session = {
