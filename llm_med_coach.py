@@ -114,7 +114,7 @@ def run_qa(message):
     print("message before sending to groq:",message)
     chat_completion = groq_client.chat.completions.create(
         messages=message,
-        model="llama-3.2-3b-preview",
+        model="llama-3.2-90b-vision-preview",
         max_tokens=2000,
         temperature=0.5,
         top_p=1,
